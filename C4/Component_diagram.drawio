@@ -1,0 +1,433 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram name="Контейнеры - Онлайн-магазин (Python бэкенд) с комментариями о масштабировании" id="Z-jpf_7fmLFo4KzMDveY">
+    <mxGraphModel dx="3565" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-1" value="&lt;b&gt;API приложение: Python Backend&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="400" y="60" width="1630" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-2" value="&lt;b&gt;Presentation Layer&lt;/b&gt;&lt;font style=&quot;font-size: 10px; color: rgb(255, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+          <mxGeometry x="50" y="92" width="280" height="758" as="geometry">
+            <mxRectangle x="50" y="92" width="190" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Auth Controller" c4Type="Component" c4Technology="FastAPI ROuter" c4Description="Обработка аунтефикации и авторизации" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-3">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-2">
+            <mxGeometry x="20" y="58" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Product Controller" c4Type="Component" c4Technology="FastAPI Router" c4Description="Обрабатывает запросы&#xa;к каталогу товаров" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-4">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-2">
+            <mxGeometry x="20" y="232.5" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Cart Controller" c4Type="Component" c4Technology="FastAPI Router" c4Description="Управляет корзиной&#xa;покупок" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-5">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-2">
+            <mxGeometry x="20" y="422.5" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Order Controller" c4Type="Component" c4Technology="FastAPI Router" c4Description="Обрабатывает создание&#xa;и управление заказами" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-6">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-2">
+            <mxGeometry x="20" y="612.5" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Auth service" c4Type="Component" c4Technology="Python Backend" c4Description="Реализует логику аунтефикации и JWT-токенов" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-7">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-2">
+            <mxGeometry x="390" y="58.5" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-8" value="&lt;b&gt;delegates to&lt;/b&gt;&lt;div&gt;[Method Call,&lt;/div&gt;&lt;div&gt;DTO]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-2" source="SNoz7UxUr5YoJ02LHwi7-6" target="SNoz7UxUr5YoJ02LHwi7-14">
+          <mxGeometry x="0.0769" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="672.5000000000002" as="sourcePoint" />
+            <mxPoint x="370" y="672.5000000000002" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-9" value="&lt;b&gt;delegates to&lt;/b&gt;&lt;div&gt;[Method Call,&lt;/div&gt;&lt;div&gt;DTO]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-2" source="SNoz7UxUr5YoJ02LHwi7-5" target="SNoz7UxUr5YoJ02LHwi7-13">
+          <mxGeometry x="0.0769" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="482.5" as="sourcePoint" />
+            <mxPoint x="370" y="482.5000000000002" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-10" value="&lt;b&gt;delegates to&lt;/b&gt;&lt;div&gt;[Method Call,&lt;/div&gt;&lt;div&gt;DTO]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-2" source="SNoz7UxUr5YoJ02LHwi7-4" target="SNoz7UxUr5YoJ02LHwi7-12">
+          <mxGeometry x="0.0769" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="292.5000000000002" as="sourcePoint" />
+            <mxPoint x="370" y="292.4999999999998" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-11" value="&lt;b&gt;delegates to&lt;/b&gt;&lt;div&gt;[Method Call,&lt;/div&gt;&lt;div&gt;Auth Data]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-2" source="SNoz7UxUr5YoJ02LHwi7-3" target="SNoz7UxUr5YoJ02LHwi7-7">
+          <mxGeometry x="0.0769" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="72.5" as="sourcePoint" />
+            <mxPoint x="540" y="102.5" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Product Service" c4Type="Component" c4Technology="Python Backend" c4Description="Реализует бизнес-логику&#xa;работы с каталогом&#xa;товаров" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-12">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-2">
+            <mxGeometry x="390" y="232.5" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Cart Service" c4Type="Component" c4Technology="Python Backend" c4Description="Реализует бизнес-логику&#xa;работы с корзиной&#xa;покупок" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-13">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-2">
+            <mxGeometry x="390" y="422.5" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Order Service" c4Type="Component" c4Technology="Python Backend" c4Description="Реализует бизнес-логику оформления заказов и управляет ими" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-14">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-2">
+            <mxGeometry x="390" y="612.5" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-15" value="&lt;b&gt;Business Logic Layer&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+          <mxGeometry x="420" y="92" width="280" height="758" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-16" value="&lt;b&gt;Data Access Layer&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+          <mxGeometry x="870" y="92" width="280" height="468" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="User Repository" c4Type="Component" c4Technology="SQLAlchemy" c4Description="Обеспечивает доступ к данным&#xa;пользователей" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-17">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-16">
+            <mxGeometry x="20" y="28" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Order Repository" c4Type="Component" c4Technology="SQLAlchemy" c4Description="Обеспечивает доступ к данным&#xa;заказов" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-18">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-16">
+            <mxGeometry x="20" y="338" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-19" value="&lt;b&gt;External Services Layer&lt;/b&gt;&lt;font style=&quot;font-size: 10px; color: rgb(255, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+          <mxGeometry x="870" y="572" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-20" value="&lt;b&gt;Infrastructure Layer&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;startSize=23;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+          <mxGeometry x="1260" y="92" width="290" height="310" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="База данных" c4Type="Container" c4Technology="PostgreSQL" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Вертикальное масштабирование +&lt;br&gt;репликация для чтения&lt;br&gt;Потенциальное узкое место&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-21">
+          <mxCell style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-20">
+            <mxGeometry x="20" y="36" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Кэш" c4Type="Container" c4Technology="Redis" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Горизонтальное масштабирование&lt;br&gt;Redis Cluster&lt;br&gt;Критичен для производительности&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-22">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0E7DAD;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-20">
+            <mxGeometry x="20" y="176" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-23" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[Method Call +&amp;nbsp;&lt;/div&gt;&lt;div&gt;Order Data]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-14" target="SNoz7UxUr5YoJ02LHwi7-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="742.0000000000002" as="sourcePoint" />
+            <mxPoint x="880" y="741.9999999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="782" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-24" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[Method Call +&amp;nbsp;&lt;/div&gt;&lt;div&gt;Payment Request]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-14" target="SNoz7UxUr5YoJ02LHwi7-35">
+          <mxGeometry x="0.0685" y="-5" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="742.0000000000002" as="sourcePoint" />
+            <mxPoint x="880" y="611.9999999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="682" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-25" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[Redis Protocol + Serialized Data]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-13" target="SNoz7UxUr5YoJ02LHwi7-22">
+          <mxGeometry x="0.1455" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="552.0000000000002" as="sourcePoint" />
+            <mxPoint x="1270" y="281.9999999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="840" y="400" />
+              <mxPoint x="1170" y="400" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-26" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[Method Call +&amp;nbsp;&lt;/div&gt;&lt;div&gt;Order Data]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-14" target="SNoz7UxUr5YoJ02LHwi7-18">
+          <mxGeometry x="0.1968" y="-2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="742.0000000000002" as="sourcePoint" />
+            <mxPoint x="879.9999999999995" y="421.9999999999998" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-27" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[JDBC/SQL + Entity Data]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-18" target="SNoz7UxUr5YoJ02LHwi7-21">
+          <mxGeometry x="-0.2895" y="1" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1039.9999999999995" y="369.9999999999998" as="sourcePoint" />
+            <mxPoint x="1430" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1580" y="460" />
+              <mxPoint x="1580" y="320" />
+              <mxPoint x="1580" y="190" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-28" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[Method Call +&amp;nbsp;&lt;/div&gt;&lt;div&gt;Entity Data]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-12" target="SNoz7UxUr5YoJ02LHwi7-34">
+          <mxGeometry x="0.1457" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="361.9999999999998" as="sourcePoint" />
+            <mxPoint x="879.9999999999995" y="271.9999999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="282" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-29" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[JDBC/SQL,&lt;/div&gt;&lt;div&gt;Entity Data]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-34" target="SNoz7UxUr5YoJ02LHwi7-21">
+          <mxGeometry x="0.0779" y="2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1059.9999999999995" y="271.9999999999998" as="sourcePoint" />
+            <mxPoint x="1240" y="218" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-30" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-13" target="SNoz7UxUr5YoJ02LHwi7-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="552.0000000000002" as="sourcePoint" />
+            <mxPoint x="879.9999999999995" y="311.9999999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-31" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[Method Call +&amp;nbsp;&lt;/div&gt;&lt;div&gt;Entity Data]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="SNoz7UxUr5YoJ02LHwi7-30">
+          <mxGeometry x="0.3036" y="-3" relative="1" as="geometry">
+            <mxPoint x="15" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-32" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[JDBC/SQL,&lt;/div&gt;&lt;div&gt;Entity Data]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-17" target="SNoz7UxUr5YoJ02LHwi7-21">
+          <mxGeometry x="0.0667" y="8" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1059.9999999999995" y="162" as="sourcePoint" />
+            <mxPoint x="1231" y="188" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-33" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[Method Call +&amp;nbsp;&lt;/div&gt;&lt;div&gt;Entity Data]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-7" target="SNoz7UxUr5YoJ02LHwi7-17">
+          <mxGeometry x="0.0476" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="172" as="sourcePoint" />
+            <mxPoint x="879.9999999999995" y="162" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Product Repository" c4Type="Component" c4Technology="SQLAlchemy" c4Description="Обеспечивает доступ к данным&#xa;товаров" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-34">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+            <mxGeometry x="890" y="252" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Payment Service" c4Type="Component" c4Technology="Python Backend" c4Description="Интегрируется с внешними платёжными системами и обрабатывает платежи" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-35">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+            <mxGeometry x="890" y="592" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Email Service" c4Type="Component" c4Technology="Celery + Redis" c4Description="Отправляет email-уведомления через Celery задачи" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-36">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+            <mxGeometry x="890" y="722" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-37" value="&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;Масштабируется горизонтально&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;Stateless&lt;/span&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+          <mxGeometry x="105" y="40" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-38" value="&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;Масштабируется горизонтально&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;Stateless&lt;/span&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+          <mxGeometry x="475" y="40" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-39" value="&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;Зависит от БД&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;Требует вертикального масштабирования, либо добавления специализированных механизмов&lt;/span&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+          <mxGeometry x="882.5" y="40" width="255" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-40" value="&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;Критично для масштабирования&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;Redis: горизонтальное масштабирование&lt;/span&gt;&lt;br style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;&lt;span style=&quot;font-size: 10px; font-weight: 700;&quot;&gt;PostgreSQL: репликация и шардирование&lt;/span&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="SNoz7UxUr5YoJ02LHwi7-1">
+          <mxGeometry x="1272.5" y="40" width="255" height="30" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-41">
+          <mxCell style="endArrow=box;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=0;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=-0.005;exitY=0.826;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="SNoz7UxUr5YoJ02LHwi7-1" source="SNoz7UxUr5YoJ02LHwi7-68">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="1150" y="360" as="sourcePoint" />
+              <mxPoint x="1150" y="510" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="1720" y="510" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Платёжный шлюз" c4Type="Software System: External API" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Внешняя зависимость&lt;br&gt;Circuit Breaker recommended&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-42">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
+            <mxGeometry x="2135" y="652" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-43" value="&lt;b&gt;uses&lt;/b&gt;&lt;div&gt;[HTTPS/REST + JSON]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-35" target="SNoz7UxUr5YoJ02LHwi7-42">
+          <mxGeometry x="-0.1183" y="4" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1579" y="763.9999999999998" as="sourcePoint" />
+            <mxPoint x="1789" y="694.0000000000002" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Система отправки email" c4Type="Software System: External API" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Внешняя зависимость&lt;br&gt;Асинхронная обработка&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-44">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
+            <mxGeometry x="2135" y="782" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-45" value="&lt;b&gt;uses&lt;/b&gt;&lt;br&gt;&lt;div&gt;[SMTP/IMAP/POP3 + HTML/Text]&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-36" target="SNoz7UxUr5YoJ02LHwi7-44">
+          <mxGeometry x="-0.1183" y="4" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1579" y="893.9999999999998" as="sourcePoint" />
+            <mxPoint x="1788.9999999999995" y="893.9999999999998" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Администратор" c4Type="Person" c4Description="Управляет онлайн-магазином" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-46">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" vertex="1" parent="1">
+            <mxGeometry x="109" y="370" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Покупатель" c4Type="Person" c4Description="Взаимодействует с онлайн-магазином" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-47">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#6C6477;strokeColor=#4D4D4D;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" vertex="1" parent="1">
+            <mxGeometry x="109" y="610" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-48">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="SNoz7UxUr5YoJ02LHwi7-6">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="369" y="600" as="sourcePoint" />
+              <mxPoint x="849" y="640" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-49">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="SNoz7UxUr5YoJ02LHwi7-5">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="369" y="600" as="sourcePoint" />
+              <mxPoint x="849" y="640" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-50">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="SNoz7UxUr5YoJ02LHwi7-4">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="369" y="600" as="sourcePoint" />
+              <mxPoint x="849" y="640" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-51">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="SNoz7UxUr5YoJ02LHwi7-3">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="369" y="600" as="sourcePoint" />
+              <mxPoint x="849" y="640" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Взаимодействие" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-52">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-47">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="609" y="670" as="sourcePoint" />
+              <mxPoint x="369" y="600" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Управление" label="&lt;div style=&quot;text-align: left&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;/div&gt;" id="SNoz7UxUr5YoJ02LHwi7-53">
+          <mxCell style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-46">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="609" y="670" as="sourcePoint" />
+              <mxPoint x="369" y="600" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-54" value="&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;&lt;b style=&quot;&quot;&gt;Компоненты для горизонтального масштабирования:&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;- Все контроллеры (Stateless)&lt;br&gt;- Сервисы бизнес-логики&lt;br&gt;- Redis кластер&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=light-dark(#1D8AB9,#1D8AB9);fillColor=none;align=left;verticalAlign=top;spacingTop=5;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="1020" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-55" value="&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;&lt;b style=&quot;&quot;&gt;Потенциальные узкие места:&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;- База данных (I/O операции)&lt;br&gt;- Внешние платежные системы&lt;br&gt;- Отправка email-уведомлений&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=light-dark(#1D8AB9,#1D8AB9);fillColor=none;align=left;verticalAlign=top;spacingTop=5;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1020" width="199" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-56" value="&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;&lt;b style=&quot;&quot;&gt;Паттерны проектирования:&lt;/b&gt;&lt;br&gt;- Layered Architecture (Многослойная архитектура)&lt;br&gt;- Dependency Inversion (Зависимости к абстракциям)&lt;br&gt;- OCP (Система открыта к расширению)&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;- SRP (Чёткое разделение ответственности)&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(29, 138, 185), rgb(29, 138, 185));&quot;&gt;- MVC (Модель, представление и контроллер)&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=light-dark(#1D8AB9,#1D8AB9);fillColor=none;align=left;verticalAlign=top;spacingTop=5;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1020" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-57" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Внешние API:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Встроенная безопасность по стандартам PCI DSS&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Регулярные обновления и улучшения от провайдера&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Снижение ответственности и затрат на разработку&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Готовые решения с высокой надежностью&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Зависимость от стороннего сервиса&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Дополнительные затраты при росте бизнеса&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Отсутствие полного контроля над функциональностью&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Возможные изменения API без обратной совместимости&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Альтернативы:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Собственная реализация (полный контроль, дорого)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Другие провайдеры (разный функционал и условия)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;align=center;verticalAlign=top;spacingTop=5;fontSize=9;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="935" width="270" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-58" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Redis:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Низкая задержка (sub-millisecond)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Поддержка различных структур данных&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Эффективное кэширование сессий и данных&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ In-memory хранение для максимальной скорости&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Горизонтальное масштабирование через Redis Cluster&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Ограничение объемом оперативной памяти&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Потеря данных при сбое (без persistence)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Сложность администрирования кластера&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Отсутствие сложных запросов как в SQL&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Альтернативы:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Memcached (проще, но меньше возможностей)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Hazelcast (распределенный кэш с более сложной настройкой)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;align=center;verticalAlign=top;spacingTop=5;fontSize=9;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="240" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-59" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PostgreSQL:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Нативная поддержка JSON/JSONB для соответствующих данных&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Расширяемость через пользовательские функции и расширения&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Продвинутые типы данных (массивы, hstore, геоданные)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Полная ACID-совместимость и надежность&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Репликация и шардирование из коробки&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Более высокие требования к ресурсам&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Медленнее простых операций по сравнению с NoSQL&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Сложность настройки для высокой производительности&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Альтернативы:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- MySQL (проще в настройке, но менее функциональный)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- SQLite (легковесный, но не для production нагрузок)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;align=center;verticalAlign=top;spacingTop=5;fontSize=9;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="60" width="270" height="170" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-60">
+          <mxCell style="endArrow=box;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=0;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-58" target="SNoz7UxUr5YoJ02LHwi7-22">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="1820" y="400" as="sourcePoint" />
+              <mxPoint x="2060" y="400" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-61">
+          <mxCell style="endArrow=box;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=0;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-59" target="SNoz7UxUr5YoJ02LHwi7-21">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="1800" y="260" as="sourcePoint" />
+              <mxPoint x="2040" y="260" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="2100" y="145" />
+                <mxPoint x="2100" y="218" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-62" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;FastAPI:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Высокая производительность (на основе ASGI, сравнима с Node.js и Go)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Встроенная валидация данных через Pydantic с понятными ошибками&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Автоматическая интерактивная документация Swagger и ReDoc&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Современный синтаксис с аннотацией типов&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Поддержка асинхронности из коробки&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Простота тестирования&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Относительно молодой фреймворк&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Меньше решений и обсуждений по сравнению с Django&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Требует хорошего понимания асинхронного программирования&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Альтернативы:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Django REST Framework (более зрелый, но менее производительный)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Flask (требует больше работы для тех же возможностей)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;align=center;verticalAlign=top;spacingTop=5;fontSize=9;fontColor=#ffffff;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="54" y="110" width="310" height="188" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-63">
+          <mxCell style="endArrow=box;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=0;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-62" target="SNoz7UxUr5YoJ02LHwi7-2">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="440" y="420" as="sourcePoint" />
+              <mxPoint x="460" y="130" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="390" y="204" />
+                <mxPoint x="390" y="342" />
+                <mxPoint x="420" y="342" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-64" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Python Backend:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Быстрая разработка благодаря простому синтаксису&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Богатая экосистема библиотек для любых задач&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Отличная поддержка асинхронности (asyncio)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Сильное сообщество и обширная документация&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Идеален для прототипирования и MVP&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Кроссплатформенность&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Высокое потребление памяти&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- GIL ограничивает истинную параллельность в CPU-bound задачах&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Более низкая производительность по сравнению с компилируемыми ЯП&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Альтернативы:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Node.js (лучше для I/O-bound, слабее для CPU-bound)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Go (выше производительность, но меньше специалистов)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;align=center;verticalAlign=top;spacingTop=5;fontSize=9;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="60" y="935" width="304" height="185" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-65">
+          <mxCell style="endArrow=box;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=0;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-64" target="SNoz7UxUr5YoJ02LHwi7-15">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="480" y="1320" as="sourcePoint" />
+              <mxPoint x="860" y="950" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="364" y="980" />
+                <mxPoint x="890" y="980" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-66" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Celery + Redis:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Хорошая масштабируемость через брокеры сообщений&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Мощная система асинхронных задач с планированием&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Мониторинг и администрирование через flower&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Поддержка периодических задач (celery beat)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Отложенная обработка и retry механизмы&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Сложность настройки в production&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Требует отдельного брокера (Redis/RabbitMQ)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Может быть избыточным для простых сценариев&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Альтернативы:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- RQ (проще, но меньше возможностей)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Dramatiq (относительно новое решение с ограниченным&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;коммьюнити)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;align=center;verticalAlign=top;spacingTop=5;fontSize=9;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="935" width="240" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-68" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SQLAlchemy:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Мощный ORM с поддержкой сложных запросов и отношений&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Гибкость: можно работать как через ORM, так и через Core&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Автоматические миграции схем через Alembic&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Поддержка асинхронности (asyncpg, asyncmy)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Поддержка множественных баз данных&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Сложность обучения и высокий порог входа&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Может быть избыточным для простых проектов&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Большой overhead для простых CRUD операций&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Альтернативы:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Django ORM (менее гибкое решение)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 8px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Peewee (легковесный, но с ограниченной функциональностью)&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;align=center;verticalAlign=top;spacingTop=5;fontSize=9;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="430" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-69" value="&lt;b&gt;External Systems&lt;/b&gt;&lt;font style=&quot;font-size: 10px; color: rgb(255, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="2115" y="630" width="280" height="290" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Type="Relationship" id="SNoz7UxUr5YoJ02LHwi7-70">
+          <mxCell style="endArrow=box;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=0;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-57" target="SNoz7UxUr5YoJ02LHwi7-69">
+            <mxGeometry width="240" relative="1" as="geometry">
+              <mxPoint x="1900" y="880" as="sourcePoint" />
+              <mxPoint x="2140" y="880" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="2420" y="1028" />
+                <mxPoint x="2420" y="775" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-72" value="" style="endArrow=box;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=0;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="SNoz7UxUr5YoJ02LHwi7-66" target="SNoz7UxUr5YoJ02LHwi7-19">
+          <mxGeometry width="240" relative="1" as="geometry">
+            <mxPoint x="1680" y="981" as="sourcePoint" />
+            <mxPoint x="1480" y="912" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNoz7UxUr5YoJ02LHwi7-71" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot; color=&quot;#1d8ab9&quot;&gt;&lt;b style=&quot;&quot;&gt;PostgreSQL: Выбрана как реляционная БД потому что данные интернет-магазина по своей&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot; color=&quot;#1d8ab9&quot;&gt;&lt;b style=&quot;&quot;&gt;природе реляционны -&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;color: light-dark(rgb(29, 138, 185), rgb(58, 152, 192)); font-size: 8px; background-color: transparent;&quot;&gt;товары относятся к категориям, заказы содержат позиции товаров,&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;color: light-dark(rgb(29, 138, 185), rgb(58, 152, 192)); font-size: 8px; background-color: transparent;&quot;&gt;пользователи имеют связи с заказами.&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;color: light-dark(rgb(29, 138, 185), rgb(58, 152, 192)); font-size: 8px; background-color: transparent;&quot;&gt;Реляционная модель обеспечивает целостность&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;color: light-dark(rgb(29, 138, 185), rgb(58, 152, 192)); font-size: 8px; background-color: transparent;&quot;&gt;данных через внешние ключи, ACID-транзакции критичны для финансовых операций,&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot; color=&quot;#1d8ab9&quot;&gt;&lt;b style=&quot;&quot;&gt;а SQL позволяет выполнять сложные аналитические запросы для бизнес-аналитики.&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot; color=&quot;#1d8ab9&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot; color=&quot;#1d8ab9&quot;&gt;&lt;b style=&quot;&quot;&gt;Python: Выбран потому что сочетает скорость разработки с мощными возможностями -&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot; color=&quot;#1d8ab9&quot;&gt;&lt;b style=&quot;&quot;&gt;динамическая типизация ускоряет прототипирование, богатая экосистема (FastAPI, SQLAlchemy)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot; color=&quot;#1d8ab9&quot;&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;color: light-dark(rgb(29, 138, 185), rgb(58, 152, 192)); font-size: 8px; background-color: transparent;&quot;&gt;покрывает&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(29, 138, 185), rgb(58, 152, 192)); font-size: 8px;&quot;&gt;все нужды магазина, а интерпретируемость языка позволяет быстро вносить изменения&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(29, 138, 185), rgb(58, 152, 192)); font-size: 8px;&quot;&gt;без перекомпиляции,&lt;/b&gt;&lt;b style=&quot;color: light-dark(rgb(29, 138, 185), rgb(58, 152, 192)); font-size: 8px; background-color: transparent;&quot;&gt;&amp;nbsp;что критично для agile-разработки и частых обновлений функционала.&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=light-dark(#1D8AB9,#1D8AB9);fillColor=none;align=center;verticalAlign=top;spacingTop=5;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="970" y="947.5" width="460" height="172.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
